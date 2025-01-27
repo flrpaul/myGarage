@@ -1,0 +1,7 @@
+Created Car, 		executed
+Created Citizen, 	executed
+Created DealerShip, executed
+		27/12/2024
+3:30 || Created Booking, executed and everything is working properly
+4:30 || Moving with the business logic, starting off in controller with new endpoints
+5:30 || Search car based on critiria added successfully and is working properly. Try "localhost/searchCars?brand=audi" for example

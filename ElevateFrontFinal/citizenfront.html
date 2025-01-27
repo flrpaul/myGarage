@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen view</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Garage Citizen view</h1>
+        <img src="uom.png" alt="uom" width="200" height="110">
+        <nav>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="https://www.uom.gr/">UoM</a>
+        </nav>
+    </header>
+
+    <main>
+
+    <section id="existingCars">
+        <h2>Available Cars</h2>
+        <table id="carsTable">
+            <thead>
+                <tr>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Fuel Type</th>
+                    <th>Engine</th>
+                    <th>Price ($)</th>
+                    <th>Availability</th>
+                    <th>Info</th>
+                    <th>Seats</th>
+                </tr>
+            </thread>
+            <tbody>
+                <!-- Edw 8a emfanistoun ta dia8esima autokinhta ths vashs-->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Anazhthsh autokinhtou -->
+
+    <section id="searchCars">
+        <h2>Search Cars</h2>
+        <form id="searchForm">
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" placeholder="e.g. Audi"/>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" placeholder="e.g. R8"/>
+
+            <label for="fuelType">Fuel Type:</label>
+            <input type="text" id="fuelType" placeholder="e.g. gasoline"/>
+
+            <label for="engine">Engine:</label>
+            <input type="text" id="engine" placeholder="e.g. V8"/>
+
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchResults"></div>
+    </section>
+
+    <!-- Agora Autokinhtou-->
+
+    <section id="purchaseCar">
+        <h2>Purchase a Car</h2>
+        <form id="purchase-car-form">
+            <label for="carModel">Car Model:</label>
+            <input type="text" id="carModel" placeholder="Enter car model (e.g., R8)" required />
+      
+            <button type="submit">Purchase Now</button>
+        </form>
+        <div id="purchase-message" class="message"></div>
+      </section>
+
+      <!-- Fugame gia Test Drive -->
+
+    <section id="bookTestDrive">
+        <h2>Book a Test Drive</h2>
+        <form id="book-test-drive-form">
+            <label for="test-drive-car-model">Car Model:</label>
+            <input type="text" id="test-drive-car-model" placeholder="Enter car model (e.g., R8)" required />
+            <label for="test-drive-user-name">Your Name:</label>
+            <input type="text" id="test-drive-user-name" placeholder="Enter your name" required />
+            <label for="test-drive-date">Test Drive Date:</label>
+            <input type="date" id="test-drive-date" required />
+            <label for="test-drive-time">Test Drive Time:</label>
+            <input type="time" id="test-drive-time" required />
+            <!-- <label for="test-drive-id">Id:</label>
+            <input type="text" id="test-drive-id" required /> -->
+            <button type="submit">Book Test Drive</button>
+            
+        </form>
+        <div id="test-drive-message" class="message"></div>
+    </section>
+
+    <button id="logoutButton">Logout</button>
+        
+    </main>
+    <script src="citizenfront.js"></script>
+</body>
+</html>

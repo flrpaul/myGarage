@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealership view</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Garage Dealership View</h1>
+        <img src="uom.png" alt="uom" width="200" height="110">
+        <nav>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="https://www.uom.gr/">UoM</a>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="existingCars">
+            <h2>Available Cars</h2>
+            <table id="carsTable">
+                <thead>
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Fuel Type</th>
+                        <th>Engine</th>
+                        <th>Price ($)</th>
+                        <th>Availability</th>
+                        <th>Info</th>
+                        <th>Seats</th>
+                    </tr>
+                </thread>
+                <tbody>
+                    <!-- Edw 8a emfanistoun ta dia8esima autokinhta ths vashs-->
+                </tbody>
+            </table>
+        </section>
+
+
+        <section id="searchCars">
+            <h2>Search Cars</h2>
+            <form id="searchForm">
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" placeholder="e.g. Audi"/>
+
+                <label for="model">Model:</label>
+                <input type="text" id="model" placeholder="e.g. R8"/>
+
+                <label for="fuelType">Fuel Type:</label>
+                <input type="text" id="fuelType" placeholder="e.g. gasoline"/>
+
+                <label for="engine">Engine:</label>
+                <input type="text" id="engine" placeholder="e.g. V8"/>
+
+                <button type="submit">Search</button>
+            </form>
+            <div id="searchResults"></div>
+        </section>
+
+        <!-- Pros8hkh autokinhtou-->
+         <section id="addCar">
+            <h2>Add a New Car</h2>
+            <form id="add-car-form">
+                <label for="add-car-brand">Brand:</label>
+                <input type="text" id="add-car-brand" placeholder="e.g. Audi" required />
+
+                <label for="add-car-model">Model:</label>
+                <input type="text" id="add-car-model" placeholder="e.g. R8" required />
+
+                <label for="add-car-fuel">Fuel Type:</label>
+                <input type="text" id="add-car-fuel" placeholder="e.g. gasoline" required />
+
+                <label for="add-car-engine">Engine:</label>
+                <input type="text" id="add-car-engine" placeholder="e.g. V8" required />
+
+                <label for="add-car-price">Price ($):</label>
+                <input type="text" id="add-car-price" placeholder="e.g. 150000" required />
+
+                <label for="add-car-availability">Availability:</label>
+                <input type="number" id="add-car-availability" placeholder="e.g. 10" required />
+
+                <label for="add-car-seats">Seats:</label>
+                <input type="number" id="add-car-seats" placeholder="e.g. 10" required />
+
+                <label for="add-car-id">Info:</label>
+                <input type="text" id="add-car-info" placeholder="e.g. 10" required />
+
+                <label for="add-car-did">Your Afm</label>
+                <input type="number" id="add-car-did" placeholder="e.g. 10" required />
+
+
+            <button type="submit">Add Car</button>
+            </form>
+            <div id="add-car-message" class="message"></div>
+        </section>
+
+        <!-- Ananewsh diathesimothtas autokinhtou -->
+        <section id="updateCarAvailability">
+            <h2>Update Car Availability</h2>
+            <form id="update-car-form">
+                <label for="update-car-id">Car Model:</label>
+                <input type="text" id="update-car-id" placeholder="Enter car ID (e.g., R8)" required />
+                
+                <label for="update-car-availability">New Availability:</label>
+                <input type="text" id="update-car-availability" placeholder="Enter new availability" required />
+                
+                <button type="submit">Update Availability</button>
+            </form>
+            <div id="update-car-message" class="message"></div>
+        </section>
+        
+        <button id="logoutButton">Logout</button>
+    </main>
+    <script src="dealershipfront.js"></script>
+</body>
+</html>

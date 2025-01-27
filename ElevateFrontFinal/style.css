@@ -1,0 +1,148 @@
+/* Βασικές Ρυθμίσεις */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    background-image: url("carsbg.jpg");
+    animation: mymove 60s infinite;
+    
+}
+
+@keyframes mymove {
+    50% {background-position: center;}
+}
+
+header {
+    background-color: #333;
+    color: #d80b89;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 120px;
+    padding: 0 20px;
+}
+
+header img{
+    position: absolute;
+    left: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header nav {
+    margin-top: 10px;
+    padding: 20px;
+    position: absolute;
+    right: 20px;
+    display:flex;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+header nav a {
+    color: #d80b89;;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    box-shadow: 0 4px 8px rgba(255, 255, 250, 1);
+}
+
+/* Φόρμες */
+form {
+    background: white;
+    max-width: 450px;  /* Mhkos koutiou*/
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    max-width: 400px;
+    text-align: center;
+    color: #d80b89;
+    align-items: center;
+    font-size: 1.9rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Κείμενα και Σύνδεσμοι */
+p {
+    text-align: center;
+    /* background-color: white; */
+    /* max-width: 470px; */
+    /* margin: 30px auto; */
+    /* padding: 10px; */
+    
+}
+
+.login-btn {
+    cursor: pointer;
+    background-color: cyan;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.4s ease;
+}
+
+.login-btn:hover {
+    background-color: #d80b89;
+}
+
+.register-btn {
+    cursor: pointer;
+    border: none;
+    /* margin-bottom: 15px auto; */
+    padding: 10px;
+    font-size: 1rem;
+    background-color: cyan;
+    border-radius: 5px;
+    align-items: center;
+    transition: background-color 0.4s ease;
+}
+
+.register-btn:hover {
+    background-color: #d80b89;
+}
+
+/* Απόκρυψη Στοιχείων */
+.hidden {
+    display: none;
+}

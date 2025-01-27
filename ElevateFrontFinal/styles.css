@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    background-image: url('carsbg.jpg');
+    animation: mymove 60s infinite;
+}
+
+@keyframes mymove {
+    50% {background-position: center;}
+}
+
+header {
+    /* background-color: #333;
+    color: #d80b89;
+    padding: 1rem;
+    text-align: center; */
+    background-color: #333;
+    color: #d80b89;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 120px;
+    padding: 0 20px;
+}
+
+header img{
+    position: absolute;
+    left: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header nav {
+    margin-top: 10px;
+    padding: 20px;
+    position: absolute;
+    right: 20px;
+    display:flex;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+header nav a {
+    color: #d80b89;;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    box-shadow: 0 4px 8px rgba(255, 255, 250, 1);
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input {
+    width: 98%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#carsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    table-layout: fixed;
+    overflow-wrap: break-word;
+}
+
+#carsTable th,
+#carsTable td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#carsTable th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#citizenLoginResult, #dealershipLoginResult {
+    text-align: center;
+    color: #d9534f;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.message {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+  }
+
+footer {
+    background-color: #f4f4f9;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+footer span {
+    font-size: 14px;
+    color: #000;
+} 
+
+
+.registration {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.registration:hover {
+    background-color: #555;
+}
+
+#logoutButton {
+    background-color: #d80b89; 
+    color: black; 
+    border: none; 
+    padding: 12px 24px; 
+    font-size: 15px; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    display: flex;
+    margin-left: auto;
+    
+}
+
+#logoutButton:hover {
+    background-color: #0056b3; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#logoutButton:active {
+    background-color: #003f7f; 
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.front-button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.front-button:hover {
+    background-color: red; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register Form</title>
+</head>
+<body>
+    <header>
+        <img src="uom.png" alt="uom" width="200" height="110">
+        <h1>Registration</h1>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="https://www.uom.gr/">UoM</a>
+            <a href="login.html">Home</a>
+        </nav>
+    </header>
+
+    <div id="registerForm">
+        <form>
+            <label for="registerRole">Select Role:</label>
+            <select id="registerRole" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="citizen">Citizen</option>
+                <option value="dealership">Dealership</option>
+            </select>
+            <br><br>
+
+            <div id="registerEmailField" class="hidden">
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="email" placeholder="user@example.com">
+            </div>
+
+            <div id="registerAfmField" class="hidden">
+                <label for="registerAfm">ΑΦΜ:</label>
+                <input type="text" id="registerAfm" name="afm" placeholder="1234567890">
+            </div>
+
+            <div id="registerFnameField" class="hidden">
+                <label for="registerFname">First Name:</label>
+                <input type="text" id="registerFname" name="fname" placeholder="Nikos">
+            </div>
+
+            <div id="registerLnameField" class="hidden">
+                <label for="registerLname">Last Name:</label>
+                <input type="text" id="registerLname" name="lname" placeholder="Papadopoulos">
+            </div>
+
+            <div id="registerPasswordField" class="hidden">
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="password" required>
+            </div>
+
+            <div id="registerCompanyNameField" class="hidden">
+                <label for="registerCompanyName">Company Name:</label>
+                <input type="text" id="registerCompanyName" name="companyname" placeholder="Audi">
+            </div>
+            
+
+            <div id="registerOwnerField" class="hidden">
+                <label for="registerOwner">Owner:</label>
+                <input type="text" id="registerOwner" name="owner" placeholder="Maria">
+            </div>
+
+            <div id="registerSubmitButton" class="hidden">
+                <button type="submit" class="register-btn">Register</button>
+            </div>
+
+            <div id="message" class="message"></div>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
